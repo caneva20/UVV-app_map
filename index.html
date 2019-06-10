@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
     <!--  JS  -->
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
@@ -33,30 +32,31 @@
 </head>
 <body>
 
-<div class="w3-container">
-    <h2>Hungry Points</h2>
-    <div class="w3-card-4" style="width:50%">
-        <div id="mapid" style="height: 300px; width: 500px"></div>
-        <div class="w3-row">
-            <div class="w3-half w3-margin">
+<div class="container-fluid m-3">
+    <h2 class="text-center">Hungry Points</h2>
+    <div class="row">
+        <div id="mapid" class="col-md-8" style="height: 600px; width: 500px"></div>
+        <div class="col-md-4">
+            <div class="form-group m-2">
                 <label for="lat" class="w3-text-grey">Latitude</label>
                 <input id="lat" class="w3-input w3-border" name="lat" type="number">
             </div>
-            <div class="w3-half w3-margin">
+            <div class="form-group m-2">
                 <label for="long" class="w3-text-grey">Longitude</label>
                 <input id="long" class="w3-input w3-border" name="long" type="number">
             </div>
-            <div class="w3-half w3-margin">
+            <div class="form-group m-2">
                 <label for="desc" class="w3-text-grey">Descrição</label>
                 <input id="desc" class="w3-input w3-border" name="desc" type="text">
             </div>
-            <div class="w3-half w3-margin">
+            <div class="form-group m-2">
                 <label for="img" class="w3-text-grey">Imagem (URL)</label>
                 <input id="img" class="w3-input w3-border" type="text">
             </div>
-        </div>
-        <div class="w3-row w3-margin">
-            <button id="btn_add" class="w3-btn w3-padding w3-teal">ADD</button>
+
+            <br>
+
+            <button id="btn_add" class="btn btn-primary btn-block">ADD</button>
         </div>
     </div>
 </div>
