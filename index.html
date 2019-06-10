@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Always Hungry</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+
+    <!--  BOOTSTRAP  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!--  JS  -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+
+</head>
+<body>
+
+<div class="w3-container">
+    <h2>Hungry Points</h2>
+    <div class="w3-card-4" style="width:50%">
+        <div id="mapid" style="height: 300px; width: 500px"></div>
+        <div class="w3-row">
+            <div class="w3-half w3-margin">
+                <label for="lat" class="w3-text-grey">Latitude</label>
+                <input id="lat" class="w3-input w3-border" name="lat" type="number">
+            </div>
+            <div class="w3-half w3-margin">
+                <label for="long" class="w3-text-grey">Longitude</label>
+                <input id="long" class="w3-input w3-border" name="long" type="number">
+            </div>
+            <div class="w3-half w3-margin">
+                <label for="desc" class="w3-text-grey">Descrição</label>
+                <input id="desc" class="w3-input w3-border" name="desc" type="text">
+            </div>
+            <div class="w3-half w3-margin">
+                <label for="img" class="w3-text-grey">Imagem (URL)</label>
+                <input id="img" class="w3-input w3-border" type="text">
+            </div>
+        </div>
+        <div class="w3-row w3-margin">
+            <button id="btn_add" class="w3-btn w3-padding w3-teal">ADD</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
